@@ -203,8 +203,9 @@ body{overflow-x: hidden;}
 #type-career .kicker-label{font-size: 13px; color: #1B5FE9; font-weight: 500; letter-spacing: 2.5px;}
 
 #type-career .personal-highlight{position: relative; margin: 0 0 110px 0; padding: 56px 0 60px 0; isolation: isolate;}
-#type-career .personal-highlight::before{content: ""; position: absolute; top: 0; bottom: 0; left: 50%; transform: translateX(-50%); width: 200vw; background: #f8fbff; z-index: -1;}
+#type-career .personal-highlight::before{content: ""; position: absolute; top: 0; bottom: 0; left: 50%; transform: translateX(-50%); width: 200vw; background: #e1edff; z-index: -1;}
 #type-career .personal-highlight .career-meta{display: flex; align-items: center; gap: 14px; margin-bottom: 25px;}
+#type-career .personal-highlight .career-meta .section-tit{color: #0d254d; font-weight: 600;}
 #type-career .personal-highlight .career-meta::before{content: ""; width: 34px; height: 2px; background: #1B5FE9; flex-shrink: 0;}
 #type-career .personal-highlight .career-title{font-size: 26px; color: #111; font-weight: 500; margin: 0 0 34px 0; line-height: 1.4; letter-spacing: -0.4px;}
 #type-career .personal-grid{display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;}

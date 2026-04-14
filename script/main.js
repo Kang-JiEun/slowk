@@ -4,8 +4,8 @@ $(function(){
         var visualSwiper01 = new Swiper('.cont01-visual-slider .swiper-container', {
             init: false,
             loop:true,
-            autoplay:true,
-            speed:400,
+            autoplay:{delay:8000},
+            speed:1000,
             spaceBetween:0,
             navigation: {
                 nextEl:'.cont01-visual-swiper-button-next',
@@ -19,6 +19,18 @@ $(function(){
                     else var idx=(index+1);
 
                     return '<span class="'+className+'"><b>'+idx+'</b></span>';
+                }
+            },
+            on:{
+                init:function(){
+                    var $active=$(this.slides).eq(this.activeIndex);
+                    var src=$active.find('img').attr('src')||'';
+                    $('#visual').toggleClass('bg-alt',/scrim\.png|sajab\.png/i.test(src));
+                },
+                slideChange:function(){
+                    var $active=$(this.slides).eq(this.activeIndex);
+                    var src=$active.find('img').attr('src')||'';
+                    $('#visual').toggleClass('bg-alt',/scrim\.png|sajab\.png/i.test(src));
                 }
             }
         });

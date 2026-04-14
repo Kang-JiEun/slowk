@@ -1,11 +1,23 @@
 @charset "utf-8";
 
 /* visual */
-#visual{background: url(/images/visual/visual_bg.png); object-fit: cover; background-repeat: no-repeat; background-size: cover;}
+#visual{background-image: linear-gradient(to bottom, transparent calc(100% - 50px), #fff 0), url(/images/visual/visual_bg.png); background-repeat: no-repeat; background-size: auto, cover; background-position: center; transition: background-color .4s ease;}
+#visual.bg-alt{background-image: linear-gradient(to bottom, transparent calc(100% - 50px), #fff 0), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600' viewBox='0 0 1200 600'><defs><g id='d'><circle cx='0' cy='0' r='36' fill='none' stroke='%23e84a84' stroke-width='3'/><circle cx='0' cy='0' r='58' fill='none' stroke='%23e84a84' stroke-width='2'/></g></defs><g opacity='0.06'><use href='%23d' transform='translate(120 140) scale(4.5)'/><use href='%23d' transform='translate(1080 480) scale(2.6)'/><use href='%23d' transform='translate(810 120) scale(0.95)'/><use href='%23d' transform='translate(410 380) scale(1.35)'/><use href='%23d' transform='translate(250 70) scale(0.75)'/><use href='%23d' transform='translate(620 220) scale(1.15)'/><use href='%23d' transform='translate(900 400) scale(0.85)'/><use href='%23d' transform='translate(490 510) scale(1.05)'/></g></svg>"); background-color: #ffe1e8; background-repeat: no-repeat; background-size: auto, cover;}
+#visual.bg-alt .info,
+#visual.bg-alt .info h1,
+#visual.bg-alt .info p{color:#47001a; font-weight:500;}
+#visual.bg-alt .info .intro-desc{font-weight:400;}
+#visual.bg-alt .info .btn1 a{color:#fff;}
+#visual.bg-alt .cont01 .visual-area .visual-slider .swiper-control .swiper-pagination .swiper-pagination-bullet{background-color:#dfa6b4;}
+#visual.bg-alt .cont01 .visual-area .visual-slider .swiper-control .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color:transparent;}
+#visual.bg-alt .cont01 .visual-area .visual-slider .swiper-control .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active b{color:#bb29ac;}
+#visual.bg-alt .cont01 .visual-area .visual-slider .swiper-control .swiper-button-prev,
+#visual.bg-alt .cont01 .visual-area .visual-slider .swiper-control .swiper-button-pause,
+#visual.bg-alt .cont01 .visual-area .visual-slider .swiper-control .swiper-button-next{color:#c7667e;}
 #visual .cont01 .row01 {padding-top: 30px; background: none;}
 #visual .cont01 .visual-area .inr {width:690px; margin: 0 auto;}
 #visual .cont01 .visual-area .visual-slider .swiper-slide a img {width:100%; max-width:100%; min-height:100%;}
-#visual .cont01 .visual-area .visual-slider .swiper-container {border-radius:5px; box-shadow:0 3px 6px 0 rgba(0,0,0,0.2);}
+#visual .cont01 .visual-area .visual-slider .swiper-container {border-radius:15px; box-shadow:0 3px 6px 0 rgba(0,0,0,0.2);}
 #visual .cont01 .visual-area .visual-slider .swiper-control {margin-bottom:15px; font-size:0;}
 #visual .cont01 .visual-area .visual-slider .swiper-control > div + div {margin-left:6px;}
 #visual .cont01 .visual-area .visual-slider .swiper-control .swiper-pagination {display:inline-block; vertical-align:middle; position:static; margin:0 15px 0 0;}
@@ -16,8 +28,10 @@
 #visual .cont01 .visual-area .visual-slider .swiper-control .swiper-button-prev {display:inline-block; vertical-align:middle; position:static; width:auto; height:auto; margin-top:0; background:none; font-size:1.5rem; color:#fff;}
 #visual .cont01 .visual-area .visual-slider .swiper-control .swiper-button-pause {display:inline-block; vertical-align:middle; font-size:1.5rem; color:#fff; cursor:pointer;}
 #visual .cont01 .visual-area .visual-slider .swiper-control .swiper-button-next {display:inline-block; vertical-align:middle; position:static; width:auto; height:auto; margin-top:0; background:none; font-size:1.5rem; color:#fff;}
-#visual .info{width: 420px; color: white; margin-top: 20px;}
-#visual .info h1 span{font-size: 2.2rem;}
+#visual .info{width: 420px; color: white; margin-top: 60px;}
+#visual .info .intro-desc{font-weight:400;}
+#visual h1{font-size: 1.5rem;}
+#visual .info h1 span{font-size: 2rem; font-weight: 700;}
 
 
 @media (max-width:1200px) {
@@ -87,7 +101,7 @@
 /* publising */
 #publising .wrap{align-items: flex-start;}
 #publising .tab_tit{margin: 10px 0 20px; border-bottom: 1px solid #ddd;}
-#publising .tab_tit li{font-size: 1.12rem; font-weight: bold; color: #707070; cursor: pointer;}
+#publising .tab_tit li{font-size: 1.12rem; font-weight: 600; color: #707070; cursor: pointer;}
 #publising .tab_tit ul{width: 550px; margin: 0 auto;}
 #publising .tab_tit ul li{padding: 12px 0; position: relative; bottom: -5px;}
 #publising .tab_tit ul li.on{padding-bottom: 5px; border-bottom: 5px solid #127CEA; border-radius: 1px; color: #127CEA;}

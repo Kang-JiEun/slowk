@@ -4,7 +4,7 @@
 #header .logo h1{font-weight: bold; font-family: 'Sriracha', cursive; letter-spacing: 1px;}
 #header .nav{font-size: 1.1rem; font-weight: bold;}
 #header .nav .lnb{float: left;}
-#header .nav .lnb>a{padding: 20px 50px; text-align: center;}
+#header .nav .lnb>a{padding: 20px 50px; text-align: center; font-weight: 600;}
 #header .nav .lnb:last-child>a{padding-right: 0;}
 #header .nav .lnb::before{content: '/'; position: absolute; top: 28px; transform: translateY(-50%); color: #ccc; font-weight: 100;}
 #header .nav .lnb:first-child:before{content: '';}
