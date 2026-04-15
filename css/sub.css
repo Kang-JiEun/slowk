@@ -204,9 +204,10 @@ body{overflow-x: hidden;}
 
 #type-career .personal-highlight{position: relative; margin: 0 0 110px 0; padding: 56px 0 60px 0; isolation: isolate;}
 #type-career .personal-highlight::before{content: ""; position: absolute; top: 0; bottom: 0; left: 50%; transform: translateX(-50%); width: 200vw; background: #e1edff; z-index: -1;}
-#type-career .personal-highlight .career-meta{display: flex; align-items: center; gap: 14px; margin-bottom: 25px;}
-#type-career .personal-highlight .career-meta .section-tit{color: #0d254d; font-weight: 600;}
+#type-career .personal-highlight .career-meta{display: flex; align-items: center; gap: 14px; margin-bottom: 14px; flex-wrap: wrap;}
+#type-career .personal-highlight .career-meta .section-tit{font-size: 24px; color: #0d254d; font-weight: 600; line-height: 1.45; letter-spacing: -0.4px; word-break: keep-all;}
 #type-career .personal-highlight .career-meta::before{content: ""; width: 34px; height: 2px; background: #1B5FE9; flex-shrink: 0;}
+#type-career .personal-highlight .section-desc{font-size: 15px; color: #4a5a78; line-height: 1.6; letter-spacing: -0.2px; margin: 0 0 32px 0; padding: 0; word-break: keep-all;}
 #type-career .personal-highlight .career-title{font-size: 26px; color: #111; font-weight: 500; margin: 0 0 34px 0; line-height: 1.4; letter-spacing: -0.4px;}
 #type-career .personal-grid{display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;}
 #type-career .personal-card{display: flex; flex-direction: column; text-decoration: none; color: inherit; background: #fff; border: 1px solid #e8edf5; border-radius: 14px; overflow: hidden;}
@@ -242,6 +243,7 @@ body{overflow-x: hidden;}
 @media screen and (max-width: 1200px){
     #type-career .personal-grid{grid-template-columns: repeat(2, 1fr);}
     #type-career .career-item{grid-template-columns: 140px 1fr; column-gap: 32px;}
+    #type-career .personal-highlight .career-meta img{width: 22px; height: auto; flex-shrink: 0;}
 }
 @media screen and (max-width: 768px){
     #type-career .personal-grid{grid-template-columns: 1fr; gap: 18px;}
@@ -256,6 +258,8 @@ body{overflow-x: hidden;}
     #type-career .section-tit{font-size: 26px;}
     #type-career .personal-highlight{margin-bottom: 44px; padding-bottom: 40px;}
     #type-career .personal-highlight .career-title{font-size: 20px; margin-bottom: 24px;}
+    #type-career .personal-highlight .career-meta .section-tit{font-size: 19px;}
+    #type-career .personal-highlight .section-desc{font-size: 14px; margin-bottom: 24px;}
     #type-career .personal-highlight .career-meta::before{width: 28px;}
     #type-career .personal-body{padding: 22px 22px 20px;}
     #type-career .personal-name{font-size: 17px;}
