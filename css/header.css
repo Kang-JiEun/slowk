@@ -6,7 +6,7 @@
 #header .nav .lnb{float: left;}
 #header .nav .lnb>a{padding: 20px 50px; text-align: center; font-weight: 600;}
 #header .nav .lnb:last-child>a{padding-right: 0;}
-#header .nav .lnb::before{content: '/'; position: absolute; top: 28px; transform: translateY(-50%); color: #ccc; font-weight: 100;}
+#header .nav .lnb::before{content: '/'; position: absolute; top: 32px; transform: translateY(-50%); color: #ccc; font-weight: 100;}
 #header .nav .lnb:first-child:before{content: '';}
 #header .nav .lnb ul.dap2{display: none; width: 100%; background: #6E9EFF; position: absolute; left: 0;border-top: 1px solid #eee; box-shadow: 0 30px 30px 0 rgba(71, 71, 71, 0.2); z-index: 10;}
 #header .nav .lnb ul.dap2 li.lnb_tit{width: calc((1170px - 21px*11)/12*2 + (125vw - 1170px)/2 + 24px); padding: 0 25px 0 calc((99vw - 1170px)/2); position: relative; float: left;}
