@@ -311,7 +311,7 @@ body{overflow-x: hidden;}
 #type-story .story-num{font-size: 12px; color: #122454; font-weight: 600; letter-spacing: 2.5px;}
 #type-story .story-item h4{font-size: 22px; color: #111; font-weight: 600; margin: 0 0 16px 0; line-height: 1.5; letter-spacing: -0.3px; word-break: keep-all;}
 #type-story .story-item p{font-size: 15px; color: #4a5568; line-height: 1.9; margin: 0; word-break: keep-all;}
-#type-story .story-item p strong{color: #1B5FE9; font-weight: 500;}
+#type-story .story-item p strong{color: #0d254d; font-weight: 500;}
 
 @media screen and (max-width: 768px){
     #type-story .story-list{gap: 40px;}
@@ -401,6 +401,16 @@ body{overflow-x: hidden;}
 .pj-nav a{display: flex; align-items: center; gap: 10px; padding: 16px 24px; border-radius: 10px; text-decoration: none; color: #0d254d; font-size: 14px; font-weight: 500; transition: background 0.2s;}
 .pj-nav a:hover{background: #f9fbff;}
 .pj-nav .pj-nav-label{font-size: 12px; color: #8a94a6; display: block; margin-bottom: 4px;}
+
+/* Top Button */
+.pj-top-btn{position: fixed; right: 32px; bottom: 32px; width: 48px; height: 48px; border-radius: 50%; border: 1px solid #e5e9f0; background: #fff; color: #0d254d; font-size: 10px; font-weight: 600; letter-spacing: 0.6px; cursor: pointer; box-shadow: 0 2px 8px rgba(13, 37, 77, 0.06); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; opacity: 0; visibility: hidden; transform: translateY(8px); transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease; z-index: 100;}
+.pj-top-btn.is-visible{opacity: 1; visibility: visible; transform: translateY(0);}
+.pj-top-btn:hover{background: #0d254d; color: #fff; border-color: #0d254d; box-shadow: 0 4px 12px rgba(13, 37, 77, 0.18);}
+.pj-top-btn span{font: inherit;}
+.pj-top-btn i{font-size: 11px;}
+@media screen and (max-width: 640px){
+    .pj-top-btn{right: 16px; bottom: 16px; width: 42px; height: 42px;}
+}
 
 /* Highlight Box */
 .pj-highlight{padding: 24px 28px; background: linear-gradient(135deg, #eaf2ff 0%, #f0f4ff 100%); border-radius: 12px; margin: 24px 0;}
