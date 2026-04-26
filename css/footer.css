@@ -4,9 +4,12 @@
 /*footer*/
 #footer{position: relative; background: #333; padding: 30px 40px; color: white;}
 #footer p{text-align: end;}
-#footer .box{background: rgb(83, 83, 83); padding: 10px 15px; border-radius: 8px;}
+#footer .box{padding: 0;}
+#footer .box p{color: #aaa;}
+#footer .box .aqua{color: #aaa;}
 #footer .box img{width: 100%;}
 #footer .info{width: 630px;}
+#footer .info p{color: #aaa;}
 #footer h1{font-weight: bold; color: grey; font-family: 'Sriracha', cursive; letter-spacing: 1px;}
 
 @media screen and (max-width: 1200px){
@@ -21,4 +24,6 @@
     #footer{padding: 20px;}
     #footer .box{width: 100%;}
     #footer .f_logo img{margin-left: 2px;}
+    #footer p{font-size: 12px;}
+    #footer .info p{font-size: 11px;}
 }
