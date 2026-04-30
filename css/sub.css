@@ -60,7 +60,9 @@ body{overflow-x: hidden;}
 #container .snb_tit h2{font-family:'Noto Sans KR';width:100%;color:#fff;font-size:1.8rem;font-weight:700;vertical-align: middle;display: table-cell;text-align: center;padding: 0 30px 40px 30px;word-break: keep-all;line-height: 1.4em;}
 #container .snb_tit p{display:none;}
 #container .snb_wrap nav{border-radius:30px;border:1px solid #ddd;position:relative;top:-50px;background:#fff;padding:15px 20px;}
-#container .snb>li>a{font-size:19px;color:#555;font-weight:600;border-bottom:1px solid #ddd;background:url(../images/sub/nav_left/snb_bu.png) no-repeat 205px center;padding: 0 40px 0 10px;box-sizing: border-box;width: 100%;padding: 15px 40px 15px 10px;box-sizing: border-box;width: 100%;line-height: 1.4em;}
+#container .snb_wrap nav .snb-group-label{display:block;font-size:14px;color:#bdbdbd;font-weight:700;padding:40px 10px 5px 10px;line-height:1;}
+#container .snb_wrap nav .snb-group-label:first-child{padding-top:15px;}
+#container .snb>li>a{font-size:19px;color:#555;font-weight:600;border-bottom:1px solid #efefef;background:url(../images/sub/nav_left/snb_bu.png) no-repeat 205px center;padding: 0 40px 0 10px;box-sizing: border-box;width: 100%;padding: 15px 40px 15px 10px;box-sizing: border-box;width: 100%;line-height: 1.4em;}
 #container .snb>li>a:hover{color:#122454;}
 #container .snb>li>a.on,
 #container .snb>li>a.on.arrow{width:auto;color:#122454;border-bottom:2px solid #122454; background: url(../images/sub/nav_left/snb_bu_on.png) no-repeat 155px center;}
