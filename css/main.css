@@ -16,7 +16,18 @@
 #visual.bg-alt .cont01 .visual-area .visual-slider .swiper-control .swiper-button-next{color:#c7667e;}
 #visual .cont01 .row01 {padding-top: 30px; background: none;}
 #visual .cont01 .visual-area .inr {width:690px; margin: 0 auto;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide a {position:relative; display:block;}
 #visual .cont01 .visual-area .visual-slider .swiper-slide a img {width:100%; max-width:100%; min-height:100%;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption {position:absolute; left:24px; bottom:24px; max-width:70%; padding:16px 20px; background:rgba(15,23,42,0.92); color:#fff; border-radius:10px; border:1px solid rgba(255,255,255,0.18); box-shadow:0 6px 20px rgba(0,0,0,0.5); pointer-events:none;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-badge {display:inline-block; padding:4px 12px; background:#ff4757; color:#fff; font-size:0.75rem; font-weight:700; letter-spacing:0.8px; border-radius:4px; margin-bottom:10px;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-badge.badge-red {background:#ff4757;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-badge.badge-green {background:#00b894;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-badge.badge-blue {background:#3742fa;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-text {font-size:0.95rem; line-height:1.55; font-weight:400; margin:0;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-text strong {color:#ffd166; font-weight:700;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-cta {display:inline-flex; align-items:center; gap:6px; margin-top:14px; padding:7px 14px; background:#ffd166; color:#0f172a; font-size:0.8rem; font-weight:700; letter-spacing:0.3px; border-radius:999px; box-shadow:0 2px 6px rgba(0,0,0,0.25); transition:transform 0.2s ease;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-cta i {font-size:1rem; line-height:1;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide a:hover .slide-caption .slide-cta {transform:translateX(3px);}
 #visual .cont01 .visual-area .visual-slider .swiper-container {border-radius:15px; box-shadow:0 3px 6px 0 rgba(0,0,0,0.2);}
 #visual .cont01 .visual-area .visual-slider .swiper-control {margin-bottom:15px; font-size:0;}
 #visual .cont01 .visual-area .visual-slider .swiper-control > div + div {margin-left:6px;}
@@ -47,6 +58,10 @@
     #visual .wrap {display:block; overflow:hidden;}
     #visual .cont01 .visual-area .inr {width:auto;}
     #visual .cont01 .visual-area .visual-slider .swiper-slide a {height:calc((100vw - 24px)*0.6522);}
+    #visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption {left:16px; bottom:16px; max-width:78%; padding:12px 14px;}
+    #visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-badge {font-size:0.7rem; padding:3px 10px; margin-bottom:8px;}
+    #visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-text {font-size:0.85rem;}
+    #visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-cta {margin-top:10px; padding:6px 12px; font-size:0.75rem;}
     #visual .info h1 span{font-size: 1.5rem;}
 }
 @media (max-width:500px) {
