@@ -4,7 +4,7 @@ $(function(){
         var visualSwiper01 = new Swiper('.cont01-visual-slider .swiper-container', {
             init: false,
             loop:true,
-            autoplay:{delay:8000},
+            autoplay:{delay:8000, disableOnInteraction:false},
             speed:1000,
             spaceBetween:0,
             navigation: {

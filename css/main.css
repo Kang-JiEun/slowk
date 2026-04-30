@@ -16,9 +16,12 @@
 #visual.bg-alt .cont01 .visual-area .visual-slider .swiper-control .swiper-button-next{color:#c7667e;}
 #visual .cont01 .row01 {padding-top: 30px; background: none;}
 #visual .cont01 .visual-area .inr {width:690px; margin: 0 auto;}
-#visual .cont01 .visual-area .visual-slider .swiper-slide a {position:relative; display:block;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide a {position:relative; display:block; overflow:hidden;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide a::after {content:""; position:absolute; inset:0; background:rgba(0,0,0,0.55); opacity:0; transition:opacity 0.3s ease; pointer-events:none; z-index:1;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide a:hover::after {opacity:1;}
 #visual .cont01 .visual-area .visual-slider .swiper-slide a img {width:100%; max-width:100%; min-height:100%;}
-#visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption {position:absolute; left:24px; bottom:24px; max-width:70%; padding:16px 20px; background:rgba(15,23,42,0.92); color:#fff; border-radius:10px; border:1px solid rgba(255,255,255,0.18); box-shadow:0 6px 20px rgba(0,0,0,0.5); pointer-events:none;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption {position:absolute; left:24px; bottom:24px; max-width:70%; padding:16px 20px; background:rgba(15,23,42,0.92); color:#fff; border-radius:10px; border:1px solid rgba(255,255,255,0.18); box-shadow:0 6px 20px rgba(0,0,0,0.5); pointer-events:none; opacity:0; visibility:hidden; transform:translateY(8px); transition:opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; z-index:2;}
+#visual .cont01 .visual-area .visual-slider .swiper-slide a:hover .slide-caption {opacity:1; visibility:visible; transform:translateY(0);}
 #visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-badge {display:inline-block; padding:4px 12px; background:#ff4757; color:#fff; font-size:0.75rem; font-weight:700; letter-spacing:0.8px; border-radius:4px; margin-bottom:10px;}
 #visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-badge.badge-red {background:#ff4757;}
 #visual .cont01 .visual-area .visual-slider .swiper-slide .slide-caption .slide-badge.badge-green {background:#00b894;}
