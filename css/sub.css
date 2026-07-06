@@ -514,6 +514,48 @@ body{overflow-x: hidden;}
 }
 
 
+/* ===== Introduce Episode Section ===== */
+#type-episode{padding: 60px 0;}
+#type-episode .section-head{display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 25px;}
+#type-episode .section-tit{font-size: 20px; color: #c1c1c1; margin: 0; padding: 0; border: none; line-height: 1.2; letter-spacing: -0.8px;}
+
+#type-episode .episode-meta{display: flex; align-items: center; gap: 14px; margin-bottom: 14px; flex-wrap: wrap;}
+#type-episode .episode-meta::before{content: ""; width: 34px; height: 2px; background: #1B5FE9; flex-shrink: 0;}
+#type-episode .episode-title{font-size: 24px; color: #0d254d; font-weight: 600; line-height: 1.45; letter-spacing: -0.4px; word-break: keep-all; margin: 0;}
+#type-episode .episode-lead{font-size: 15px; color: #4a5a78; line-height: 1.7; margin: 0 0 36px 0; word-break: keep-all; letter-spacing: -0.2px;}
+
+#type-episode .episode-grid{display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: 32px; align-items: start;}
+
+#type-episode .episode-figure{margin: 0; border: 1px solid #eef2f7; border-radius: 14px; overflow: hidden; background: #fff;}
+#type-episode .episode-figure img{width: 100%; display: block; aspect-ratio: 4 / 3; object-fit: contain; padding: 16px; box-sizing: border-box;}
+#type-episode .episode-figure figcaption{padding: 12px 16px; font-size: 12px; color: #8a94a6; text-align: center; line-height: 1.5; border-top: 1px solid #eef2f7;}
+
+#type-episode .episode-steps{list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 28px;}
+#type-episode .episode-step{padding: 0;}
+#type-episode .episode-step-meta{display: flex; align-items: center; gap: 14px; margin-bottom: 10px;}
+#type-episode .episode-step-meta::before{content: ""; width: 34px; height: 2px; background: #122454; flex-shrink: 0;}
+#type-episode .episode-step-label{font-size: 13px; color: #122454; font-weight: 600; letter-spacing: 0.5px;}
+#type-episode .episode-step p{font-size: 15px; color: #4a5568; line-height: 1.9; margin: 0; word-break: keep-all;}
+#type-episode .episode-step p strong{color: #0d254d; font-weight: 600;}
+#type-episode .episode-step code,
+#type-episode .episode-lead code{display: inline-block; padding: 1px 7px; background: #eef2f7; color: #002c7f; font-family: 'D2Coding', 'Courier New', monospace; font-size: 13px; border-radius: 4px; line-height: 1.4;}
+
+@media screen and (max-width: 1200px){
+    #type-episode .episode-grid{grid-template-columns: 1fr; gap: 24px;}
+}
+@media screen and (max-width: 640px){
+    #type-episode{padding: 40px 0;}
+    #type-episode .section-head{margin-bottom: 32px;}
+    #type-episode .section-tit{font-size: 26px;}
+    #type-episode .episode-meta::before{width: 28px;}
+    #type-episode .episode-step-meta::before{width: 28px;}
+    #type-episode .episode-title{font-size: 20px;}
+    #type-episode .episode-lead{font-size: 14px; margin-bottom: 28px;}
+    #type-episode .episode-steps{gap: 24px;}
+    #type-episode .episode-step p{font-size: 14px;}
+}
+
+
 
 
 
